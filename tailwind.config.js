@@ -20,6 +20,13 @@ module.exports = {
       green: {
         primary: '#409c89',
       },
+      dark: {
+        primary: '#363636',
+      },
+      grey: {
+        primary: '#545454',
+        secondary: '#6c6c6c',
+      },
     },
   },
   variants: {},
