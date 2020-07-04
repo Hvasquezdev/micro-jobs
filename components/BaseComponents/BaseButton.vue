@@ -36,8 +36,7 @@ export default {
 
 <style>
 .base-button {
-  padding: 10px 30px;
-  height: 50px;
+  padding: 13px 30px;
 }
 .base-button--white {
   background-color: theme('colors.white');
