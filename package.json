@@ -8,11 +8,13 @@
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
+    "svg": "svgo --config=.svgo.yml -f ./static/images/svg && vsvg -s ./static/images/svg -t ./components/icons",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "vue-svgicon": "^3.2.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

@@ -83,7 +83,7 @@ export default {
   transition: all 0.25s;
 }
 .base-input.is-active label {
-  margin-top: -40px;
+  padding-bottom: 40px;
   font-size: 14px;
 }
 .base-input .input {

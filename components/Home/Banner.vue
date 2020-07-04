@@ -5,6 +5,8 @@
     <div class="banner-shape h-auto absolute left-0 top-0">
       <img src="/images/png/banner-shape.png" alt="Banner left shape" />
     </div>
+    <div class="dot-overlay"></div>
+
     <p class="font-manrope font-bold text-white">
       We're Worldwide.
     </p>
@@ -20,8 +22,11 @@
       </strong>
     </h1>
 
-    <a href="#" class="text-white font-manrope font-extrabold">
-      <i>i</i>
+    <a
+      href="#"
+      class="text-white font-manrope font-extrabold flex items-center"
+    >
+      <base-icon name="job" />
       <span class="capitalize">
         +10.000 open jobs
       </span>
@@ -42,6 +47,7 @@
 <script>
 import BaseInput from '@/components/BaseComponents/BaseInput';
 import BaseButton from '@/components/BaseComponents/BaseButton';
+import BaseIcon from '@/components/BaseComponents/BaseIcon';
 
 export default {
   name: 'HomeBanner',
@@ -49,6 +55,7 @@ export default {
   components: {
     BaseInput,
     BaseButton,
+    BaseIcon,
   },
 };
 </script>
@@ -98,5 +105,15 @@ export default {
 .home-banner .search-form .base-button {
   box-shadow: 4px 0 21px rgb(237, 133, 144, 0.26);
   padding: 18px 45px;
+}
+.home-banner .dot-overlay {
+  background-image: radial-gradient(#68b1a2 20%, transparent 20%);
+  background-position: 0 0;
+  background-size: 30px 30px;
+  position: absolute;
+  right: 0;
+  bottom: 190px;
+  width: 90px;
+  height: 210px;
 }
 </style>
