@@ -45,7 +45,7 @@ export default {
   margin-top: 50px;
   margin-bottom: 70px;
 }
-.see-all-button {
+.featured-gigs-section .see-all-button {
   width: 216px;
   height: 62px;
 }

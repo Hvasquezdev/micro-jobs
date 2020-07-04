@@ -1,16 +1,16 @@
 <template>
-  <card />
+  <browse-jobs />
 </template>
 
 <script>
-import Card from '@/components/Card';
+import BrowseJobs from '@/components/Home/BrowseJobs';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    Card,
+    BrowseJobs,
   },
 };
 </script>
