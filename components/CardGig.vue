@@ -1,5 +1,5 @@
 <template>
-  <article class="card-gig relative flex flex-col font-manrope">
+  <article class="card-gig relative flex flex-col font-manrope shadow-card">
     <!-- Card Image -->
     <div class="card-gig__image rounded-t mb-5"></div>
     <!-- Card Data -->
@@ -55,8 +55,6 @@
 <style>
 .card-gig {
   width: 360px;
-  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
-  font-family: theme();
   border-radius: 15px;
 }
 .card-gig__image {

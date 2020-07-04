@@ -1,8 +1,8 @@
 <template>
   <div
-    class="card w-64 border border-1 border-red-primary flex items-center justify-center"
+    class="card w-64 rounded-md text-dark-primary font-manrope text-base flex items-center justify-center shadow-card"
   >
-    Hole
+    <slot />
   </div>
 </template>
 
