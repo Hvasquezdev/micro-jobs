@@ -10,6 +10,7 @@ module.exports = {
     },
     boxShadow: {
       btn: '2px 0 35px rgba(110, 121, 142, 0.24)',
+      card: '2px 0 24px rgba(139, 149, 169, 0.24)',
     },
     colors: {
       white: '#fff',
