@@ -4,7 +4,20 @@
   Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+    fontFamily: {
+      manrope: 'Manrope, sans-serif',
+    },
+    boxShadow: {
+      btn: '2px 0 35px rgba(110, 121, 142, 0.24)',
+    },
+    colors: {
+      white: '#fff',
+      red: {
+        primary: '#ed8590',
+      },
+    },
+  },
   variants: {},
   plugins: [],
   purge: {
