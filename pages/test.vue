@@ -1,12 +1,17 @@
 <template>
-  <h1>Pruebas</h1>
+  <card />
 </template>
 
 <script>
+import Card from '@/components/Card';
+
 export default {
   name: 'Test',
 
   layout: 'test',
+  components: {
+    Card,
+  },
 };
 </script>
 
