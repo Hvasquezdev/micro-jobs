@@ -1,4 +1,6 @@
 {
-  "semi": false,
-  "singleQuote": true
+  "semi": true,
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "tabWidth": 2
 }
