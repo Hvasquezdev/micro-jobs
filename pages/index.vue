@@ -9,6 +9,7 @@
     <our-adventages />
     <testimonials />
     <latest-news />
+    <companies />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import FeaturedGigs from '@/components/Home/FeaturedGigs';
 import OurAdventages from '@/components/Home/OurAdventages';
 import Testimonials from '@/components/Home/Testimonials';
 import LatestNews from '@/components/Home/LatestNews';
+import Companies from '@/components/Home/Companies';
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
     OurAdventages,
     Testimonials,
     LatestNews,
+    Companies,
   },
 };
 </script>
