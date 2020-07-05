@@ -92,7 +92,7 @@ export default {
   text-decoration: underline;
 }
 .home-banner .search-form {
-  padding: 35px 45px;
+  padding: 25px 45px;
   width: 90%;
   max-width: 1200px;
 }
