@@ -10,6 +10,7 @@
     <testimonials />
     <latest-news />
     <companies />
+    <join-us />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import OurAdventages from '@/components/Home/OurAdventages';
 import Testimonials from '@/components/Home/Testimonials';
 import LatestNews from '@/components/Home/LatestNews';
 import Companies from '@/components/Home/Companies';
+import JoinUs from '@/components/Home/JoinUs';
 
 export default {
   components: {
@@ -37,6 +39,7 @@ export default {
     Testimonials,
     LatestNews,
     Companies,
+    JoinUs,
   },
 };
 </script>

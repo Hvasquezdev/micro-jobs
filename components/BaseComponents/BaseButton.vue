@@ -16,16 +16,18 @@ export default {
   props: {
     color: {
       type: String,
-      default: '',
+      default: 'white',
     },
     shadow: Boolean,
     rounded: Boolean,
+    outlined: Boolean,
   },
 
   computed: {
     classNames() {
       return {
         [`base-button--${this.color}`]: this.color,
+        'base-button--outlined': this.outlined,
         'shadow-btn': this.shadow,
         'rounded-full': this.rounded,
       };
@@ -41,6 +43,9 @@ export default {
 .base-button--white {
   background-color: theme('colors.white');
   color: theme('colors.red.primary');
+}
+.base-button--white.base-button--outlined {
+  border: 1px solid theme('colors.red.primary');
 }
 .base-button--danger {
   background-color: theme('colors.red.primary');
