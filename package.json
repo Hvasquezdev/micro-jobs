@@ -13,6 +13,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "hooper": "^0.3.4",
     "nuxt": "^2.13.0",
     "vue-svgicon": "^3.2.6"
   },

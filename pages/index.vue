@@ -7,6 +7,7 @@
     <newsletter />
     <featured-gigs />
     <our-adventages />
+    <testimonials />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Reason from '@/components/Home/Reason';
 import Newsletter from '@/components/Home/Newsletter';
 import FeaturedGigs from '@/components/Home/FeaturedGigs';
 import OurAdventages from '@/components/Home/OurAdventages';
+import Testimonials from '@/components/Home/Testimonials';
 
 export default {
   components: {
@@ -28,6 +30,7 @@ export default {
     Newsletter,
     FeaturedGigs,
     OurAdventages,
+    Testimonials,
   },
 };
 </script>

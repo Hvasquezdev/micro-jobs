@@ -115,8 +115,7 @@ export default {
 <style>
 .our-adventages {
   padding: 215px 50px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 25px;
 }
 .our-adventages .svg {
   z-index: 5;
