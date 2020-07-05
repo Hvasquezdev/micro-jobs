@@ -28,6 +28,7 @@ module.exports = {
         light: '#f8f8f8',
         primary: '#545454',
         secondary: '#6c6c6c',
+        tertiary: '#969696',
       },
     },
   },

@@ -3,6 +3,7 @@
     <home-banner />
     <browse-jobs />
     <how-it-works />
+    <newsletter />
     <featured-gigs />
   </div>
 </template>
@@ -11,6 +12,7 @@
 import HomeBanner from '@/components/Home/Banner';
 import BrowseJobs from '@/components/Home/BrowseJobs';
 import HowItWorks from '@/components/Home/HowItWorks';
+import Newsletter from '@/components/Home/Newsletter';
 import FeaturedGigs from '@/components/Home/FeaturedGigs';
 
 export default {
@@ -18,6 +20,7 @@ export default {
     HomeBanner,
     BrowseJobs,
     HowItWorks,
+    Newsletter,
     FeaturedGigs,
   },
 };

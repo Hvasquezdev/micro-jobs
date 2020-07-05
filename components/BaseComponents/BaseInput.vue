@@ -1,8 +1,5 @@
 <template>
-  <div
-    :class="{ 'is-active': focused || value }"
-    class="base-input flex items-center border-b border-b-2"
-  >
+  <div :class="classNames" class="base-input flex items-center">
     <label v-if="label" class="font-manrope text-grey-primary text-base">
       {{ label }}
     </label>
@@ -34,6 +31,14 @@ export default {
       type: String,
       default: 'text',
     },
+    borderSize: {
+      type: [String, Boolean],
+      default: '2',
+    },
+    border: {
+      type: [String, Boolean],
+      default: 'b',
+    },
     label: {
       type: String,
       default: '',
@@ -47,6 +52,14 @@ export default {
   },
 
   computed: {
+    classNames() {
+      return {
+        [`border-${this.border}-${this.borderSize}`]:
+          this.border && this.borderSize,
+        [`border-${this.border}`]: this.border,
+        'is-active': this.focused || this.value,
+      };
+    },
     listeners() {
       return {
         ...this.$listeners,
