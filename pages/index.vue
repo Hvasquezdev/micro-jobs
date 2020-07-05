@@ -6,6 +6,7 @@
     <reason />
     <newsletter />
     <featured-gigs />
+    <our-adventages />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HowItWorks from '@/components/Home/HowItWorks';
 import Reason from '@/components/Home/Reason';
 import Newsletter from '@/components/Home/Newsletter';
 import FeaturedGigs from '@/components/Home/FeaturedGigs';
+import OurAdventages from '@/components/Home/OurAdventages';
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     Reason,
     Newsletter,
     FeaturedGigs,
+    OurAdventages,
   },
 };
 </script>

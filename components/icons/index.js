@@ -1,5 +1,10 @@
 /* eslint-disable */
 require('./case')
 require('./check')
+require('./doble-arrow')
+require('./group')
 require('./job')
+require('./like')
 require('./m-glass')
+require('./translate')
+require('./wave-shape')

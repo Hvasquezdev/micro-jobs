@@ -1,0 +1,10 @@
+/* eslint-disable */
+var icon = require('vue-svgicon')
+icon.register({
+  'group': {
+    width: 29,
+    height: 25,
+    viewBox: '0 0 29 25',
+    data: '<defs><filter id="svgicon_group_a" x="1092" y="4338" width="29" height="25" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#fff"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><path pid="0" data-name="Forma 1" d="M1116.81 4351.5h-2.24a5.931 5.931 0 01.35 2.03v8.62a2.658 2.658 0 01-.14.85h3.71a2.54 2.54 0 002.51-2.55v-4.7a4.221 4.221 0 00-4.19-4.25zm-18.73 2.03a5.931 5.931 0 01.35-2.03h-2.24a4.221 4.221 0 00-4.19 4.25v4.7a2.54 2.54 0 002.51 2.55h3.71a2.658 2.658 0 01-.14-.85v-8.62zm10.98-4.25h-5.12a4.228 4.228 0 00-4.19 4.25v8.62a.841.841 0 00.84.85h11.82a.847.847 0 00.84-.85v-8.62a4.228 4.228 0 00-4.19-4.25zm-2.56-11.28a5.133 5.133 0 00-2.46 9.58 4.98 4.98 0 004.92 0 5.133 5.133 0 00-2.46-9.58zm-8.84 4.77a3.825 3.825 0 000 7.65 3.631 3.631 0 001.48-.31 3.752 3.752 0 001.84-1.72 3.864 3.864 0 00.44-1.8 3.788 3.788 0 00-3.76-3.82zm17.68 0a3.788 3.788 0 00-3.76 3.82 3.864 3.864 0 00.44 1.8 3.752 3.752 0 001.84 1.72 3.631 3.631 0 001.48.31 3.825 3.825 0 000-7.65z" transform="translate(-1092 -4338)" fill-rule="evenodd" filter="url(#svgicon_group_a)"/>'
+  }
+})

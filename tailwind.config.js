@@ -33,6 +33,16 @@ module.exports = {
       },
       purple: {
         primary: '#d24bff',
+        secondary: '#d256fc',
+      },
+      blue: {
+        primary: '#7788fd',
+      },
+      orange: {
+        primary: '#ff8965',
+      },
+      pink: {
+        primary: '#f35f99',
       },
     },
   },
