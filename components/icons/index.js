@@ -1,5 +1,6 @@
 /* eslint-disable */
 require('./case')
+require('./check-filled')
 require('./check')
 require('./doble-arrow')
 require('./group')

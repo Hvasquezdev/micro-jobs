@@ -27,6 +27,8 @@ module.exports = {
       grey: {
         light: '#f8f8f8',
         'light-2': '#777777',
+        'light-3': '#dfe3e3',
+        'light-4': '#fafafa',
         primary: '#545454',
         secondary: '#6c6c6c',
         tertiary: '#969696',

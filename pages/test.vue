@@ -1,16 +1,16 @@
 <template>
-  <latest-news />
+  <packages />
 </template>
 
 <script>
-import LatestNews from '@/components/Home/LatestNews';
+import Packages from '@/components/Packages';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    LatestNews,
+    Packages,
   },
 };
 </script>
