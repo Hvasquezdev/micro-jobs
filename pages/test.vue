@@ -1,16 +1,16 @@
 <template>
-  <browse-jobs />
+  <reason />
 </template>
 
 <script>
-import BrowseJobs from '@/components/Home/BrowseJobs';
+import Reason from '@/components/Home/Reason';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    BrowseJobs,
+    Reason,
   },
 };
 </script>
