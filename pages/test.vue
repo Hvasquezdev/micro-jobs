@@ -1,16 +1,16 @@
 <template>
-  <reason />
+  <latest-news />
 </template>
 
 <script>
-import Reason from '@/components/Home/Reason';
+import LatestNews from '@/components/Home/LatestNews';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    Reason,
+    LatestNews,
   },
 };
 </script>
