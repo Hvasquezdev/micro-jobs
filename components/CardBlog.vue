@@ -1,5 +1,5 @@
 <template>
-  <article class="card-blog flex items-start shadow-card font-manrope">
+  <article class="card-blog bg-white flex items-start shadow-card font-manrope">
     <!-- Image -->
     <img
       src="/images/jpg/card-blog-placeholder.jpg"

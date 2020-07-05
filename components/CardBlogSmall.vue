@@ -1,6 +1,6 @@
 <template>
   <article
-    class="card-blog-small shadow-card flex flex-col items-start font-manrope"
+    class="card-blog-small bg-white shadow-card flex flex-col items-start font-manrope"
   >
     <!-- Card image -->
     <img

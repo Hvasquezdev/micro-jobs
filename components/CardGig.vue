@@ -1,5 +1,7 @@
 <template>
-  <article class="card-gig relative flex flex-col font-manrope shadow-card">
+  <article
+    class="card-gig bg-white relative flex flex-col font-manrope shadow-card"
+  >
     <!-- Card Image -->
     <div class="card-gig__image rounded-t mb-5"></div>
     <!-- Card Data -->

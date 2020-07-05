@@ -104,7 +104,7 @@ export default {
   font-size: 15px;
 }
 .the-footer .dot-overlay {
-  background-image: radial-gradient(#64ad9e 20%, transparent 20%);
+  background-image: radial-gradient(#6aafa1 20%, transparent 20%);
   background-position: 0 0;
   background-size: 15px 15px;
   position: absolute;
@@ -117,6 +117,7 @@ export default {
   background-image: url('/images/png/footer-ellipse.png');
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 50px;
   height: 115px;
   left: 0;

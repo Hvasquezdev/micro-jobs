@@ -5,13 +5,15 @@
       Feature <span class="font-extrabold">Gigs</span>
     </h1>
     <!-- Gigs Container -->
-    <div class="gigs-card-container grid grid-cols-3">
+    <div class="gigs-card-container grid grid-cols-3 relative">
       <card-gig />
       <card-gig />
       <card-gig />
       <card-gig />
       <card-gig />
       <card-gig />
+
+      <div class="dot-overlay"></div>
     </div>
     <!-- See All Button -->
     <base-button shadow class="see-all-button" color="danger" rounded>
@@ -48,5 +50,16 @@ export default {
 .featured-gigs-section .see-all-button {
   width: 216px;
   height: 62px;
+}
+.featured-gigs-section .dot-overlay {
+  background-image: radial-gradient(#d9ebe8 20%, transparent 20%);
+  background-position: 0 0;
+  background-size: 30px 30px;
+  position: absolute;
+  left: -95px;
+  bottom: -100px;
+  width: 240px;
+  height: 210px;
+  z-index: -1;
 }
 </style>
