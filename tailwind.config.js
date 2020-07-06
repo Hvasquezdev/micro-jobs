@@ -48,6 +48,9 @@ module.exports = {
       pink: {
         primary: '#f35f99',
       },
+      yellow: {
+        primary: '#ffc107',
+      },
     },
   },
   variants: {},

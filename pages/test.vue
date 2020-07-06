@@ -1,21 +1,23 @@
 <template>
   <div>
-    <gig-about />
-    <gig-details />
+    <gig-reviews />
   </div>
 </template>
 
 <script>
-import GigDetails from '@/components/GigDetails';
-import GigAbout from '@/components/GigAbout';
-
+// import GigDetails from '@/components/GigDetails';
+// import GigAbout from '@/components/GigAbout';
+import GigReviews from '@/components/GigReviews';
+// import Review from '@/components/Review';
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    GigDetails,
-    GigAbout,
+    // GigDetails,
+    // GigAbout,
+    GigReviews,
+    // Review,
   },
 };
 </script>
