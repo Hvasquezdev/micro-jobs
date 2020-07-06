@@ -84,5 +84,6 @@ export default {
   background-color: #ecf5f3;
   border-radius: 100%;
   transform: translateX(50%);
+  z-index: -1;
 }
 </style>

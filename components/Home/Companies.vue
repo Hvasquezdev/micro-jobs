@@ -54,6 +54,10 @@ export default {
 }
 .companies .company-list {
   column-gap: 130px;
-  max-width: 1140px;
+  max-width: 1190px;
+  width: 90%;
+}
+.companies .company-list img {
+  padding: 0 25px;
 }
 </style>

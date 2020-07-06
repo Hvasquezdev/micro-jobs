@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home overflow-hidden">
     <home-banner />
     <browse-jobs />
     <how-it-works />
