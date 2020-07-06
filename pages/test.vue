@@ -1,16 +1,21 @@
 <template>
-  <packages />
+  <div>
+    <gig-about />
+    <gig-details />
+  </div>
 </template>
 
 <script>
-import Packages from '@/components/Packages';
+import GigDetails from '@/components/GigDetails';
+import GigAbout from '@/components/GigAbout';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    Packages,
+    GigDetails,
+    GigAbout,
   },
 };
 </script>
