@@ -31,10 +31,10 @@
     </div>
     <!-- User Review  -->
     <div class="user-review flex flex-col items-start">
-      <h2 class="font-bold text-base text-dark-secondary my-3">
+      <h2 class="font-bold text-lg text-dark-secondary my-3">
         I am very satisfied with the work done.
       </h2>
-      <p class="font-manrope text-grey-primary text-base">
+      <p class="font-manrope text-grey-primary text-lg">
         We are so grateful since we found your website. All these freelancers
         are so professional and among the best. Very satisfied with everything.
       </p>
