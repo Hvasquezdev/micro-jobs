@@ -1,15 +1,28 @@
 <template>
-  <div class="single-post flex justify-between ml-auto mr-auto">
-    <main class="main-content w-full">
-      <post-header />
-      <gig-review-carousel />
-      <post-gallery />
-      <post-packages />
-      <gig-about />
-      <gig-details />
-      <gig-reviews />
-    </main>
-    <sidebar class="right-section"></sidebar>
+  <div
+    class="single-post flex flex-col items-center justify-center ml-auto mr-auto"
+  >
+    <bread-crumb :items="routes" />
+    <div class="wrapper flex justify-between">
+      <main class="main-content w-full">
+        <post-header />
+        <gig-review-carousel />
+        <post-gallery />
+        <post-packages />
+        <gig-about />
+        <gig-details />
+        <gig-reviews />
+      </main>
+      <sidebar class="right-section">
+        <card-packages />
+        <card-custom-order />
+        <card-profile />
+      </sidebar>
+    </div>
+    <section class="end-post">
+      <other-gigs />
+      <recommended-gigs />
+    </section>
   </div>
 </template>
 
@@ -21,6 +34,12 @@ import PostPackages from '@/components/SinglePost/PostPackages';
 import GigAbout from '@/components/GigAbout';
 import GigDetails from '@/components/GigDetails';
 import GigReviews from '@/components/GigReviews';
+import BreadCrumb from '@/components/BreadCrumb';
+import OtherGigs from '@/components/OtherGigs';
+import RecommendedGigs from '@/components/RecommendedGigs';
+import CardPackages from '@/components/CardPackages';
+import CardCustomOrder from '@/components/CardCustomOrder';
+import CardProfile from '@/components/CardProfile';
 
 export default {
   name: 'SinglePost',
@@ -33,6 +52,37 @@ export default {
     GigAbout,
     GigDetails,
     GigReviews,
+    BreadCrumb,
+    OtherGigs,
+    RecommendedGigs,
+    CardPackages,
+    CardCustomOrder,
+    CardProfile,
+  },
+
+  data() {
+    return {
+      routes: [
+        {
+          text: 'Home',
+          url: '/',
+        },
+        {
+          text: 'Services',
+          url: '/',
+        },
+        {
+          text: 'Single Post',
+          url: '/services/' + this.$route.params.id,
+        },
+      ],
+    };
+  },
+
+  computed: {
+    currentRoute() {
+      return this.$route;
+    },
   },
 };
 </script>
@@ -45,9 +95,21 @@ export default {
 .single-post .right-section {
   width: 360px;
   margin-left: 25px;
+  padding-top: 80px;
+}
+.single-post .right-section > .base-card:not(:last-child) {
+  margin-bottom: 30px;
 }
 .single-post .main-content {
   max-width: 750px;
+}
+.single-post .breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  margin-right: auto;
+}
+.single-post .breadcrumb ul {
+  justify-content: flex-start;
 }
 .single-post .main-content .post-header {
   margin-bottom: 25px;
@@ -60,5 +122,8 @@ export default {
 }
 .single-post .main-content .post-packages {
   margin-bottom: 55px;
+}
+.single-post .end-post {
+  border-top: 1px solid theme('colors.grey.light-3');
 }
 </style>

@@ -108,8 +108,7 @@ export default {
 .gig-reviews {
   max-width: 751px;
 }
-.gig-reviews section,
-.load-more {
+.gig-reviews section {
   border-bottom: 1px solid theme('colors.grey.light-3');
 }
 .gig-reviews .load-more {

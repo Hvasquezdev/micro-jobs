@@ -94,7 +94,7 @@ export default {
 <style>
 .profile-card {
   max-width: 360px;
-  padding: 30px 23px 23px 23px;
+  padding: 30px 30px 30px 30px;
 }
 .profile-card .profile-img {
   width: 155px;

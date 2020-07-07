@@ -55,7 +55,7 @@
         rounded
         @click="nextSlide"
       >
-        <base-icon name="arrow-right" />
+        <base-icon name="arrow-left" />
       </base-button>
     </client-only>
   </base-card>
@@ -132,6 +132,9 @@ export default {
 .gig-review-carousel .btn-back {
   left: 15px;
   top: 130px;
+}
+.gig-review-carousel .btn-next .svg-icon {
+  transform: rotate(180deg);
 }
 .gig-review-carousel .btn-next {
   right: 15px;
