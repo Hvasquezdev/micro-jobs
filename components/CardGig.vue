@@ -3,7 +3,7 @@
     class="card-gig bg-white relative flex flex-col font-manrope shadow-card"
   >
     <!-- Card Image -->
-    <div class="card-gig__image rounded-t mb-5"></div>
+    <div class="image rounded-t mb-5 bg-no-repeat bg-center bg-cover"></div>
     <!-- Card Data -->
     <section class="flex flex-wrap justify-between px-6 pb-8">
       <!-- Name -->
@@ -43,13 +43,13 @@
     </section>
     <!-- Feature Tag -->
     <div
-      class="card-gig__feature-tag text-sm top-0 left-0 text-white ml-4 rounded-md p-1 text-center absolute bg-red-primary"
+      class="feature-tag text-sm top-0 left-0 text-white ml-4 rounded-md text-center absolute bg-red-primary"
     >
       POPULAR
     </div>
-    <!-- Like Heart Button -->
+    <!-- Heart -->
     <div
-      class="card-gig__heart bg-no-repeat bg-center top-0 right-0 rounded-full absolute mr-4"
+      class="heart bg-no-repeat bg-center top-0 right-0 rounded-full absolute mr-4"
     ></div>
   </article>
 </template>
@@ -59,7 +59,7 @@
   width: 360px;
   border-radius: 15px;
 }
-.card-gig__image {
+.card-gig .image {
   background-image: url('/images/jpg/card-gig-placeholder.jpg');
   height: 175px;
   border-top-left-radius: 15px;
@@ -75,11 +75,13 @@
 .card-gig__days {
   width: 50%;
 }
-.card-gig__feature-tag {
+.card-gig .feature-tag {
   width: 85px;
   margin-top: 15px;
+  line-height: 1;
+  padding: 7px;
 }
-.card-gig__heart {
+.card-gig .heart {
   width: 45px;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.45);
