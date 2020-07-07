@@ -1,6 +1,10 @@
 <template>
   <div>
-    <the-navbar class="w-full absolute z-50 top-0" />
+    <the-navbar
+      :class="{ absolute: isNavbarAbsolute }"
+      class="w-full z-50 top-0"
+      :has-background="!isNavbarAbsolute"
+    />
     <Nuxt />
     <the-footer class="w-full" />
   </div>
@@ -14,6 +18,20 @@ export default {
   components: {
     TheNavbar,
     TheFooter,
+  },
+
+  computed: {
+    isNavbarAbsolute() {
+      const currentPage = this.$route.name;
+
+      switch (currentPage) {
+        case 'index':
+          return true;
+
+        default:
+          return false;
+      }
+    },
   },
 };
 </script>

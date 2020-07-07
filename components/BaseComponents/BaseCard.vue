@@ -37,4 +37,7 @@ export default {
 .base-card {
   padding: 18px 20px;
 }
+.base-card.rounded-md {
+  border-radius: 14px;
+}
 </style>

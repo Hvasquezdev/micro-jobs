@@ -1,5 +1,15 @@
 <template>
-  <div class="navbar flex items-center justify-between">
+  <div
+    :class="classNames"
+    class="navbar flex items-center justify-between overflow-hidden"
+  >
+    <div
+      v-if="hasBackground"
+      class="navbar-shape h-auto absolute left-0 top-0 pointer-events-none"
+    >
+      <img src="/images/png/navbar-shape.png" alt="Banner left shape" />
+    </div>
+
     <div class="brand-logo">
       <img src="/images/png/logo.png" alt="Micro Jobs" />
     </div>
@@ -31,6 +41,18 @@ export default {
   components: {
     BaseButton,
   },
+
+  props: {
+    hasBackground: Boolean,
+  },
+
+  computed: {
+    classNames() {
+      return {
+        'has-background': this.hasBackground,
+      };
+    },
+  },
 };
 </script>
 
@@ -43,5 +65,14 @@ export default {
 }
 .navbar ul li.button-link:not(:last-child) {
   margin-right: 14px;
+}
+.navbar.has-background {
+  background: rgb(58, 147, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 147, 129, 1) 0%,
+    rgba(65, 157, 138, 1) 52%,
+    rgba(87, 173, 155, 1) 100%
+  );
 }
 </style>

@@ -39,6 +39,11 @@ export default {
 <style>
 .base-button {
   padding: 13px 30px;
+  outline: none;
+}
+.base-button:active,
+.base-button:focus {
+  outline: none;
 }
 .base-button--white {
   background-color: theme('colors.white');
