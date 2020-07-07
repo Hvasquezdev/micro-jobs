@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="10.781" height="19.75">
   <defs>
     <filter id="a" x="432.594" y="412.125" width="10.781" height="19.75" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#fff"/>
+      <feFlood result="flood" flood-color="currentColor"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
