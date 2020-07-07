@@ -77,10 +77,10 @@
   font-size: 15px;
   border-top: 1px solid theme('colors.grey.light-5');
   padding: 15px 0 20px 0;
+  margin-right: 16px;
 }
 .card-gig-vertical .content {
   padding-left: 16px;
-  padding-right: 16px;
 }
 .card-gig-vertical .content > p {
   margin: 15px 0 8px 0;
