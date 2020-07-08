@@ -26,6 +26,8 @@
           </div>
 
           <listing-promotion />
+
+          <pagination />
         </div>
       </section>
     </div>
@@ -39,6 +41,7 @@ import ListingPromotion from '@/components/Listing/ListingPromotion';
 import CardGigVertical from '@/components/CardGigVertical';
 import DropdownBar from '@/components/DropdownsBar';
 import BreadCrumb from '@/components/BreadCrumb';
+import Pagination from '@/components/Pagination';
 
 export default {
   name: 'ServicesListing',
@@ -50,6 +53,7 @@ export default {
     DropdownBar,
     CardGigVertical,
     BreadCrumb,
+    Pagination,
   },
 
   data() {
@@ -100,6 +104,10 @@ export default {
   .content-right
   .listing-promotion {
   margin: 30px 0;
+}
+.services-listing .main-wrapper .listing-content .content-right .pagination {
+  margin: 20px 0 65px 0;
+  justify-content: flex-end;
 }
 .services-listing .content-left {
   max-width: 260px;
