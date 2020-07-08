@@ -35,7 +35,7 @@
       <!-- Name & Price  -->
       <section class="flex items-center justify-between">
         <h2 class="text-dark-primary font-semibold">Angelo V.Ray</h2>
-        <p class="price font-bold text-lg text-green-primary">$5.99</p>
+        <p class="price font-bold text-green-primary">$5.99</p>
       </section>
     </div>
   </article>
@@ -72,6 +72,9 @@
 }
 .card-gig-vertical .rating-stars img {
   margin-right: 5px;
+}
+.card-gig-vertical .price {
+  font-size: 15px;
 }
 .card-gig-vertical section {
   font-size: 15px;
