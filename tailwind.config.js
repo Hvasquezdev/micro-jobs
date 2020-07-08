@@ -33,6 +33,7 @@ module.exports = {
         'light-4': '#fafafa',
         'light-5': '#e9eaea',
         'darken-1': '#656464',
+        'light-6': '#a4a4a4',
         primary: '#545454',
         secondary: '#6c6c6c',
         tertiary: '#969696',
