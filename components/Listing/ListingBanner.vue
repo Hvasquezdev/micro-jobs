@@ -1,6 +1,6 @@
 <template>
   <article
-    class="banner-gig flex flex-col font-manrope shadow-card bg-center bg-no-repeat bg-cover"
+    class="listing-banner-card flex flex-col font-manrope shadow-card bg-center bg-no-repeat bg-cover"
   >
     <!-- Tag & Heary  -->
     <div class="flex tag-heart justify-between items-center w-full">
@@ -11,7 +11,7 @@
         FEATURED
       </div>
       <!-- Heart Button -->
-      <div class="heart bg-no-repeat bg-center rounded-full"></div>
+      <a href="#" class="heart bg-no-repeat bg-center rounded-full"></a>
     </div>
     <!-- Caption  -->
     <h1 class="text-grey-primary font-medium mt-6">
@@ -26,23 +26,23 @@
 </template>
 
 <style>
-.banner-gig {
+.listing-banner-card {
   max-width: 1140px;
   background-image: url('/images/jpg/gig-large-placeholder.jpg');
   padding: 20px 28px 50px 32px;
   border-radius: 15px;
 }
-.banner-gig h1 {
+.listing-banner-card h1 {
   font-size: 28px;
   max-width: 60%;
 }
 
-.banner-gig .feature-tag {
+.listing-banner-card .feature-tag {
   width: 85px;
   line-height: 1;
   padding: 7px;
 }
-.banner-gig .heart {
+.listing-banner-card .heart {
   width: 45px;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.45);

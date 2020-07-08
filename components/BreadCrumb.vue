@@ -76,7 +76,7 @@ export default {
 }
 .breadcrumb .breadcrumb-link.active-breadcrumb {
   color: theme('colors.red.primary');
-  font-weight: 500;
+  font-weight: 700;
 }
 @screen md {
   .breadcrumb ul li:not(:first-child)::before {
