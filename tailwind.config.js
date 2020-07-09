@@ -20,6 +20,7 @@ module.exports = {
       green: {
         primary: '#409c89',
         secondary: '#419d8a',
+        tertiary: '#3b9583',
         light: '#f0f7f6',
       },
       dark: {
@@ -34,6 +35,7 @@ module.exports = {
         'light-5': '#e9eaea',
         'darken-1': '#656464',
         'light-6': '#a4a4a4',
+        'light-7': '#8d8d8d',
         primary: '#545454',
         secondary: '#6c6c6c',
         tertiary: '#969696',

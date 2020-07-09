@@ -1,16 +1,21 @@
 <template>
-  <employment-history />
+  <sign-up />
 </template>
 
 <script>
-import EmploymentHistory from '@/components/ProfileListing/EmploymentHistory';
+// import Revenues from '@/components/Revenues';
+// import ProfileSidebar from '@/components/ProfileListing/ProfileSidebar';
+import SignUp from '@/components/SignUp';
 
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    EmploymentHistory,
+    // Revenues,
+    // SinglePost,
+    // ProfileSidebar,
+    SignUp,
   },
 };
 </script>
