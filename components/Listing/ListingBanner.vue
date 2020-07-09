@@ -2,7 +2,7 @@
   <article
     class="listing-banner-card flex flex-col font-manrope shadow-card bg-center bg-no-repeat bg-cover"
   >
-    <!-- Tag & Heary  -->
+    <!-- Tag & Heart  -->
     <div class="flex tag-heart justify-between items-center w-full">
       <!-- Feature Tag -->
       <div

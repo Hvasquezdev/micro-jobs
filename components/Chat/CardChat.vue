@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ 'is-active': isActive }"
-    class="chat-card cursor-pointer flex items-center justify-start w-full bg-grey-light-7 flex-shrink-0"
+    class="chat-card cursor-pointer flex items-center justify-start w-full bg-grey-light-9 flex-shrink-0"
   >
     <!-- User picture -->
     <div class="card-thumb rounded-full bg-white flex-shrink-0 relative">
