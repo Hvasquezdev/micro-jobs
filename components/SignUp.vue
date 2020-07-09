@@ -25,9 +25,9 @@
         <base-input class="input-wrapper" type="password" label="Password" />
         <!-- Company Name  -->
         <div
-          class="dropdown text-grey-light-2 text-base flex items-center font-normal input-wrapper"
+          class="dropdown text-grey-primary text-base flex items-center font-normal input-wrapper"
         >
-          <label class="display-none" for="company-name"> Company Name</label>
+          <label for="company-name"> Company Name</label>
           <select
             id="company-name"
             name="company-name"
@@ -41,9 +41,9 @@
         </div>
         <!-- Country -->
         <div
-          class="dropdown text-grey-light-2 text-base flex items-center font-normal input-wrapper"
+          class="dropdown text-grey-primary text-base flex items-center font-normal input-wrapper"
         >
-          <label class="display-none" for="company-name"> Country</label>
+          <label for="country">Country</label>
           <select
             id="country"
             name="country"
