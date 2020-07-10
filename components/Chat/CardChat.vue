@@ -25,7 +25,7 @@
         class="content-head font-manrope w-full flex items-center justify-between"
       >
         <h3 class="title text-dark-secondary font-semibold">Name</h3>
-        <span class="date text-grey-light-8">Today</span>
+        <span class="date text-grey-light-10">Today</span>
       </div>
 
       <!-- message preview and counter -->

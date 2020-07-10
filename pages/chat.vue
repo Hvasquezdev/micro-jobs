@@ -22,7 +22,7 @@
             />
           </div>
           <h4 class="title text-dark-secondary font-semibold">Name</h4>
-          <p class="text-grey-light-8">Typing...</p>
+          <p class="text-grey-light-10">Typing...</p>
         </div>
       </div>
 

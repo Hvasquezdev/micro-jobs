@@ -37,12 +37,9 @@ module.exports = {
         'darken-2': '#4a4a4a',
         'light-6': '#a4a4a4',
         'light-7': '#8d8d8d',
-<<<<<<< HEAD
         'light-8': '#666666',
-=======
-        'light-8': '#8d8d8d',
         'light-9': '#f8f8f8',
->>>>>>> 83658434dcbc3a65110120f209fc3d4ddc20420e
+        'light-10': '#8d8d8d',
         primary: '#545454',
         secondary: '#6c6c6c',
         tertiary: '#969696',

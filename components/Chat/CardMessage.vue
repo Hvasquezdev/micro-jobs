@@ -18,7 +18,7 @@
         </h3>
       </div>
 
-      <span class="date text-grey-light-8">
+      <span class="date text-grey-light-10">
         11:45pm
       </span>
     </div>
