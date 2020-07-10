@@ -1,23 +1,23 @@
 <template>
   <article
-    class="card-gig bg-white relative flex flex-col font-manrope shadow-card"
+    class="card-gig-profile bg-white relative flex flex-col font-manrope shadow-card"
   >
     <!-- Card Image -->
     <div class="image rounded-t mb-5 bg-no-repeat bg-center bg-cover"></div>
     <!-- Card Data -->
     <section class="flex flex-wrap justify-between px-6 pb-8">
       <!-- Name -->
-      <h2 class="card-gig__title font-medium text-lg mb-2 text-dark-primary">
+      <h2 class="title font-medium text-lg mb-2 text-dark-primary">
         Jane Cormes
       </h2>
       <!-- Price -->
       <p
-        class="card-gig__price text-lg text-right mb-2 font-extrabold text-green-primary"
+        class="price text-lg text-right mb-2 font-extrabold text-green-primary"
       >
         $12.00
       </p>
       <!-- Rating Stars -->
-      <div class="card-gig__rating flex items-center mb-4">
+      <div class="rating flex items-center mb-4">
         <div class="stars flex items-start mr-3">
           <img src="/images/png/rating-star-full.png" alt="rating star" />
           <img src="/images/png/rating-star-full.png" alt="rating star" />
@@ -29,17 +29,12 @@
           4.8/5
         </p>
       </div>
-      <!-- Days -->
-      <p
-        class="card-gig__days text-base mb-5 font-extrabold text-right text-grey-secondary"
-      >
-        10 days
-      </p>
-      <!-- Description -->
-      <p class="card-gig__description text-base font-normal text-grey-primary">
-        Lorem Ipsum is simply dummy text of the printing and typesettin
-        industry.
-      </p>
+      <!-- Skill Tags  -->
+      <div class="skills text-red-primary">
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">PHP</a>
+      </div>
     </section>
     <!-- Feature Tag -->
     <div
@@ -55,37 +50,50 @@
 </template>
 
 <style>
-.card-gig {
+.card-gig-profile {
   width: 360px;
   border-radius: 15px;
 }
-.card-gig .image {
+.card-gig-profile .image {
   background-image: url('/images/jpg/card-gig-placeholder.jpg');
   height: 175px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
 }
-.card-gig section {
+.card-gig-profile section {
   max-height: 180px;
 }
-.card-gig__price,
-.card-gig__title,
-.card-gig__rating,
-.card-gig__days {
+.card-gig-profile .price,
+.title,
+.rating,
+.days {
   width: 50%;
 }
-.card-gig .feature-tag {
+.card-gig-profile .feature-tag {
   width: 85px;
   margin-top: 15px;
   line-height: 1;
   padding: 7px;
 }
-.card-gig .heart {
+.card-gig-profile .heart {
   width: 45px;
   height: 45px;
   background-color: rgba(0, 0, 0, 0.45);
   margin-top: 10px;
   background-image: url('/images/png/heart-icon.png');
+}
+.card-gig-profile .skills a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-weight: 500; /*medium*/
+  min-width: 75px;
+  height: 35px;
+  background-color: #fff5f4;
+}
+.card-gig-profile .skills a:not(:last-child) {
+  margin-right: 10px;
 }
 </style>

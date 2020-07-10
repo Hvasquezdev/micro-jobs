@@ -1,21 +1,15 @@
 <template>
-  <sign-up />
+  <card-gig-profile />
 </template>
 
 <script>
-// import Revenues from '@/components/Revenues';
-// import ProfileSidebar from '@/components/ProfileListing/ProfileSidebar';
-import SignUp from '@/components/SignUp';
-
+import CardGigProfile from '@/components/CardGigProfile';
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    // Revenues,
-    // SinglePost,
-    // ProfileSidebar,
-    SignUp,
+    CardGigProfile,
   },
 };
 </script>
