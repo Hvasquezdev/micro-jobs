@@ -59,6 +59,21 @@ export default {
   border-right: 1px solid #f6e7e9;
   max-height: 100%;
 }
+.chat .chat-list::-webkit-scrollbar {
+  width: 11px;
+}
+.chat .chat-list {
+  scrollbar-width: thin;
+  scrollbar-color: #ed8590 #f6e7e9;
+}
+.chat .chat-list::-webkit-scrollbar-track {
+  background: #f6e7e9;
+}
+.chat .chat-list::-webkit-scrollbar-thumb {
+  background-color: #ed8590;
+  border-radius: 6px;
+  border: 3px solid #f6e7e9;
+}
 .chat .chat-messages {
   padding: 40px 55px 20px 55px;
 }
@@ -67,6 +82,10 @@ export default {
 }
 .chat .chat-messages .messages-list .messages-wrapper {
   max-height: calc(100% - 95px);
+}
+.chat .chat-messages .messages-list .messages-wrapper {
+  scrollbar-width: none;
+  scrollbar-color: #ed8590 #f6e7e9;
 }
 .chat .chat-messages .messages-input {
   padding: 25px 45px;
