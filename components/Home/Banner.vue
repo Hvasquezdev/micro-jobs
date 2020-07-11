@@ -12,7 +12,7 @@
     </p>
 
     <h1 class="text-white capitalize text-center font-helvetica">
-      Exiting
+      Exciting
       <br />
       <span class="title-span">
         Carreer

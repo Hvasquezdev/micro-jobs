@@ -31,7 +31,7 @@
       </div>
       <!-- Days -->
       <p
-        class="card-gig__days text-base mb-5 font-extrabold text-right text-grey-secondary"
+        class="card-gig__days text-base mb-5 font-normal text-right text-grey-secondary"
       >
         10 days
       </p>

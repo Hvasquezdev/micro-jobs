@@ -2,16 +2,11 @@
   <section class="featured-gigs-section flex flex-col items-center">
     <!-- Section Title -->
     <h1 class="text-black font-normal font-manrope">
-      Feature <span class="font-extrabold">Gigs</span>
+      Featured <span class="font-extrabold">Gigs</span>
     </h1>
     <!-- Gigs Container -->
     <div class="gigs-card-container grid grid-cols-3 relative">
-      <card-gig />
-      <card-gig />
-      <card-gig />
-      <card-gig />
-      <card-gig />
-      <card-gig />
+      <card-gig v-for="gig in 6" :key="gig" />
 
       <div class="dot-overlay"></div>
     </div>
