@@ -143,7 +143,7 @@ export default {
   margin-bottom: 23px;
   width: 100%;
 }
-.sign-up select {
+.sign-up-form select {
   background-image: url('/images/png/dropdown-arrow.png'); /*list down icon*/
   background-repeat: no-repeat;
   background-position: 100% center;
@@ -159,16 +159,13 @@ export default {
   border-color: #cbcbd2;
   margin-right: 16px;
 }
-.sign-up-form .checkbox {
-  margin-bottom: 26px;
-}
 
 .sign-up-form input[type='checkbox'] {
   visibility: hidden;
   position: absolute;
 }
 
-.sign-up a {
+.sign-up-form a {
   color: theme('colors.green.secondary');
   font-weight: 700; /*bold*/
   border-bottom: 1px solid theme('colors.green.secondary');
