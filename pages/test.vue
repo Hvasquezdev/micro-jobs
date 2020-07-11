@@ -1,17 +1,22 @@
 <template>
-  <card-gig-profile />
+  <sign-up-client />
 </template>
 
 <script>
-import CardGigProfile from '@/components/CardGigProfile';
+// import RequiredTime from '@/components/RequiredTime';
+// import TextareaBase from '@/components/TextareaBase';
+// import Payments from '@/components/Payments';
+import SignUpClient from '@/components/SignUpClient';
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    CardGigProfile,
+    // RequiredTime,
+    // TextareaBase,
+    // Payments,
+    SignUpClient,
   },
 };
 </script>
-
 <style></style>

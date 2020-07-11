@@ -10,7 +10,7 @@
         id="types"
         class="block appearance-none shadow-card w-full py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white"
       >
-        <option>Type</option>
+        <option value="" disabled selected>Type</option>
         <option>Recently</option>
         <option>Old</option>
       </select>
@@ -25,7 +25,7 @@
         id="file-format"
         class="block appearance-none shadow-card w-full py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white"
       >
-        <option>File Format</option>
+        <option value="" disabled selected>File Format</option>
         <option>Recently</option>
         <option>Old</option>
       </select>
@@ -40,7 +40,7 @@
         id="package-includes"
         class="block appearance-none shadow-card w-full py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white"
       >
-        <option>Package Includes</option>
+        <option value="" disabled selected>Package Includes</option>
         <option>Recently</option>
         <option>Old</option>
       </select>
@@ -55,7 +55,7 @@
         id="sort-by"
         class="block appearance-none shadow-card w-full py-3 px-4 pr-8 leading-tight focus:outline-none focus:bg-white"
       >
-        <option>Most Popular</option>
+        <option value="" disabled selected>Most Popular</option>
         <option>Recently</option>
         <option>Old</option>
       </select>
