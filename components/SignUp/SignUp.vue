@@ -1,7 +1,10 @@
 <template>
   <section class="sign-up-form font-manrope flex flex-col items-center">
     <!-- Format -->
-    <ul class="form-type flex items-center justify-center w-auto text-lg">
+    <ul
+      v-if="hasTabs"
+      class="form-type flex items-center justify-center w-auto text-lg"
+    >
       <li class="cursor-pointer is-active">Client Account</li>
       <li class="cursor-pointer">Freelancer Account</li>
     </ul>
@@ -101,13 +104,22 @@ import BaseCard from '@/components/BaseComponents/BaseCard';
 import BaseButton from '@/components/BaseComponents/BaseButton';
 import BaseInput from '@/components/BaseComponents/BaseInput';
 import BaseIcon from '@/components/BaseComponents/BaseIcon';
+
 export default {
   name: 'SignUp',
+
   components: {
     BaseCard,
     BaseButton,
     BaseInput,
     BaseIcon,
+  },
+
+  props: {
+    hasTabs: {
+      type: Boolean,
+      default: true,
+    },
   },
 };
 </script>

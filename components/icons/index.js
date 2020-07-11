@@ -1,6 +1,7 @@
 /* eslint-disable */
 require('./arrow-left-large')
 require('./arrow-left')
+require('./arrow-right-large')
 require('./arrow-right')
 require('./by-hour')
 require('./calendar')
