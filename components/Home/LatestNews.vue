@@ -42,8 +42,7 @@ export default {
   font-size: 45px;
   margin-bottom: 58px;
 }
-.latest-news .card-blog-title,
-.date {
+.latest-news .date {
   font-weight: 400; /* regular */
 }
 .latest-news .card-blog-description {

@@ -27,10 +27,10 @@
                   />
                 </div>
                 <div class="font-manrope text-left">
-                  <h3 class="font-medium text-dark-secondary capitalize">
+                  <h3 class="font-medium text-dark-primary capitalize">
                     Jessica Roy
                   </h3>
-                  <h4 class="text-base text-grey-primary">
+                  <h4 class="text-base text-grey-light-2">
                     Director
                   </h4>
                 </div>

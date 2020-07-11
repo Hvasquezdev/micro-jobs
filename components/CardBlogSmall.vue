@@ -9,7 +9,9 @@
       class="shadow-card"
     />
     <!-- Title -->
-    <h2 class="card-blog-title text-xl text-left text-dark-secondary">
+    <h2
+      class="card-blog-title font-medium text-xl text-left text-dark-secondary"
+    >
       Millenial Majority Workforce
     </h2>
     <!-- Date, tag -->

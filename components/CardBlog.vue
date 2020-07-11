@@ -9,7 +9,7 @@
     <!-- Data -->
     <section class="data self-center">
       <!-- Title -->
-      <h2 class="card-blog-title text-left text-dark-secondary">
+      <h2 class="card-blog-title font-medium text-left text-dark-secondary">
         Anual Impact Report
       </h2>
       <!-- Date, tag -->
