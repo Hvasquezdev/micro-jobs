@@ -31,10 +31,10 @@
           <select
             id="company-name"
             name="company-name"
-            class="block appearance-none w-full py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            class="block appearance-none w-full py-3 leading-tight focus:outline-none focus:bg-white"
             au
           >
-            <option>Company Name</option>
+            <option value="" disabled selected>Company Name</option>
             <option>ipsum</option>
             <option>dolor</option>
           </select>
@@ -47,24 +47,36 @@
           <select
             id="country"
             name="country"
-            class="block appearance-none w-full py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            class="block appearance-none w-full py-3 leading-tight focus:outline-none focus:bg-white"
           >
-            <option>Country</option>
+            <option value="" disabled selected>Country</option>
             <option>ipsum</option>
             <option>dolor</option>
           </select>
         </div>
         <!--Help  -->
-        <label class="checkbox flex items-center" for="send-help">
-          <input id="send-help" type="checkbox" name="send-help" />
+        <label class="checkbox-wrapper flex items-center" for="send-help">
+          <div class="checkbox">
+            <input id="send-help" type="checkbox" name="send-help" />
+            <!-- Custom Checkbox  -->
+            <div class="custom-checkbox">
+              <base-icon class="icon-checked" name="checked" />
+            </div>
+          </div>
           <span class="text-grey-light-2"
             >Yes! Send me genuinely useful emails every now and then to help me
             get the most out of Micro-Jobs.</span
           >
         </label>
         <!-- Terms of service, privacy policy...  -->
-        <label class="checkbox flex items-center" for="acept-terms">
-          <input id="acept-terms" type="checkbox" name="acept-terms" />
+        <label class="checkbox-wrapper flex items-center" for="acept-terms">
+          <div class="checkbox">
+            <input id="acept-terms" type="checkbox" name="acept-terms" />
+            <!-- Custom Checkbox  -->
+            <div class="custom-checkbox">
+              <base-icon class="icon-checked" name="checked" />
+            </div>
+          </div>
           <span class="text-grey-light-2"
             >Yes, I understand and agree to the Micro-Jobs
             <a href="#"> Terms of Service</a>, including the user
@@ -84,12 +96,14 @@
 import BaseCard from '@/components/BaseComponents/BaseCard';
 import BaseButton from '@/components/BaseComponents/BaseButton';
 import BaseInput from '@/components/BaseComponents/BaseInput';
+import BaseIcon from '@/components/BaseComponents/BaseIcon';
 export default {
   name: 'SignUp',
   components: {
     BaseCard,
     BaseButton,
     BaseInput,
+    BaseIcon,
   },
 };
 </script>
@@ -108,18 +122,22 @@ export default {
   margin-bottom: 92px;
 }
 
-.sign-up .form-wrapper {
+.sign-up .sign-up .form-wrapper {
   padding: 47px;
 }
 
 .sign-up .get-started {
   width: 216px;
   height: 62px;
-  margin: 54px auto 0;
+  margin: 40px auto 36px;
 }
 .sign-up .input-wrapper {
   margin-bottom: 46px;
   max-width: 475px;
+  width: 100%;
+}
+.sign-up .checkbox-wrapper {
+  margin-bottom: 23px;
   width: 100%;
 }
 .sign-up select {
@@ -131,16 +149,12 @@ export default {
 .sign-up .dropdown label {
   display: none;
 }
+
 .sign-up input[type='checkbox'] {
-  height: 22px;
-  width: 22px;
-  border-radius: 15px;
-  border-color: #cbcbd2;
-  margin-right: 16px;
+  visibility: hidden;
+  position: absolute;
 }
-.sign-up .checkbox {
-  margin-bottom: 26px;
-}
+
 .sign-up a {
   color: theme('colors.green.secondary');
   font-weight: 700; /*bold*/
@@ -163,5 +177,35 @@ export default {
   border-bottom: 3px solid theme('colors.green.primary');
   color: theme('colors.green.primary');
   font-weight: 700; /*bold*/
+}
+/* Custom Input Checked Styles  */
+.sign-up input[type='checkbox'],
+.custom-checkbox,
+.checkbox {
+  width: 22px;
+  height: 22px;
+}
+.sign-up .checkbox {
+  position: relative;
+  margin-right: 12px;
+}
+.sign-up .custom-checkbox {
+  border: 1px solid #cbcbd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  position: absolute;
+}
+.sign-up .custom-checkbox .icon-checked {
+  position: absolute;
+  transform: scale(0.8);
+  visibility: hidden;
+}
+.sign-up input[type='checkbox']:checked + .custom-checkbox .icon-checked {
+  visibility: visible;
+}
+.sign-up input[type='checkbox']:checked + .custom-checkbox {
+  border-color: theme('colors.green.primary');
 }
 </style>

@@ -16,6 +16,7 @@ module.exports = {
       white: '#fff',
       red: {
         primary: '#ed8590',
+        light: '#fdf3f4',
       },
       green: {
         primary: '#409c89',
@@ -47,12 +48,15 @@ module.exports = {
       purple: {
         primary: '#d24bff',
         secondary: '#d256fc',
+        light: '#faeeff',
       },
       blue: {
         primary: '#7788fd',
+        light: '#f1f3ff',
       },
       orange: {
         primary: '#ff8965',
+        light: '#fff3ef',
       },
       pink: {
         primary: '#f35f99',

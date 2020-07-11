@@ -28,7 +28,7 @@
           <select
             id="country"
             name="country"
-            class="block appearance-none w-full py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            class="block appearance-none w-full py-3 leading-tight focus:outline-none focus:bg-white"
           >
             <option>Country</option>
             <option>ipsum</option>
@@ -36,8 +36,14 @@
           </select>
         </div>
         <!-- Terms of service, privacy policy...  -->
-        <label class="checkbox flex items-center" for="acept-terms">
-          <input id="acept-terms" type="checkbox" name="acept-terms" />
+        <label class="checkbox-wrapper flex items-center" for="acept-terms">
+          <div class="checkbox">
+            <input id="acept-terms" type="checkbox" name="acept-terms" />
+            <!-- Custom Checkbox  -->
+            <div class="custom-checkbox">
+              <base-icon class="icon-checked" name="checked" />
+            </div>
+          </div>
           <span class="text-grey-light-2"
             >Yes, I understand and agree to the Micro-Jobs
             <a href="#"> Terms of Service</a>, including the user
@@ -54,7 +60,20 @@
 </template>
 
 <script>
-export default {};
+import BaseCard from '@/components/BaseComponents/BaseCard';
+import BaseButton from '@/components/BaseComponents/BaseButton';
+import BaseInput from '@/components/BaseComponents/BaseInput';
+import BaseIcon from '@/components/BaseComponents/BaseIcon';
+
+export default {
+  name: 'SignUpClient',
+  components: {
+    BaseCard,
+    BaseButton,
+    BaseInput,
+    BaseIcon,
+  },
+};
 </script>
 
 <style>
@@ -89,6 +108,9 @@ export default {};
   max-width: 100%;
   margin-bottom: 22px;
 }
+.sign-up-client .checkbox-wrapper {
+  width: 100%;
+}
 .sign-up-client select {
   background-image: url('/images/png/dropdown-arrow.png'); /*list down icon*/
   background-repeat: no-repeat;
@@ -99,11 +121,9 @@ export default {};
   display: none;
 }
 .sign-up-client input[type='checkbox'] {
-  height: 22px;
-  width: 22px;
-  border-radius: 15px;
   border-color: #cbcbd2;
-  margin-right: 16px;
+  visibility: hidden;
+  position: absolute;
 }
 
 .sign-up-client a {
@@ -112,5 +132,38 @@ export default {};
 }
 .sign-up-client label a {
   border-bottom: 1px solid theme('colors.green.secondary');
+}
+/* Custom Input Checked Styles  */
+.sign-up-client input[type='checkbox'],
+.custom-checkbox,
+.checkbox {
+  width: 22px;
+  height: 22px;
+}
+.sign-up-client .checkbox {
+  position: relative;
+  margin-right: 12px;
+}
+.sign-up-client .custom-checkbox {
+  border: 1px solid #cbcbd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  position: absolute;
+}
+.sign-up-client .custom-checkbox .icon-checked {
+  position: absolute;
+  transform: scale(0.8);
+  visibility: hidden;
+}
+.sign-up-client
+  input[type='checkbox']:checked
+  + .custom-checkbox
+  .icon-checked {
+  visibility: visible;
+}
+.sign-up-client input[type='checkbox']:checked + .custom-checkbox {
+  border-color: theme('colors.green.primary');
 }
 </style>

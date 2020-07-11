@@ -1,17 +1,22 @@
 <template>
-  <seek-pros />
+  <sign-up-client />
 </template>
 
 <script>
-import SeekPros from '@/components/SeekPros';
+// import RequiredTime from '@/components/RequiredTime';
+// import TextareaBase from '@/components/TextareaBase';
+// import Payments from '@/components/Payments';
+import SignUpClient from '@/components/SignUpClient';
 export default {
   name: 'Test',
 
   layout: 'test',
   components: {
-    SeekPros,
+    // RequiredTime,
+    // TextareaBase,
+    // Payments,
+    SignUpClient,
   },
 };
 </script>
-
 <style></style>

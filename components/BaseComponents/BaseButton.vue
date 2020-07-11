@@ -56,4 +56,8 @@ export default {
   background-color: theme('colors.red.primary');
   color: theme('colors.white');
 }
+.base-button--light-danger {
+  background-color: theme('colors.red.light');
+  color: theme('colors.red.primary');
+}
 </style>
