@@ -1,12 +1,16 @@
 <template>
-  <section class="sign-up font-manrope flex flex-col items-center">
+  <section class="sign-up-form font-manrope flex flex-col items-center">
     <!-- Format -->
     <ul class="form-type flex items-center justify-center w-auto text-lg">
       <li class="cursor-pointer is-active">Client Account</li>
       <li class="cursor-pointer">Freelancer Account</li>
     </ul>
     <!-- Form  -->
-    <base-card class="form-wrapper h-full flex flex-col w-full">
+    <base-card
+      class="form-wrapper h-full flex flex-col w-full relative bg-white"
+    >
+      <div class="overlay z-10"></div>
+
       <h1 class="text-dark-primary font-normal mb-6">
         Create a Free <span class="font-bold">Client Account</span>
       </h1>
@@ -31,7 +35,7 @@
           <select
             id="company-name"
             name="company-name"
-            class="block appearance-none w-full py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            class="block appearance-none w-full py-3 pr-4 leading-tight focus:outline-none focus:bg-white"
             au
           >
             <option>Company Name</option>
@@ -47,7 +51,7 @@
           <select
             id="country"
             name="country"
-            class="block appearance-none w-full py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+            class="block appearance-none w-full py-3 pr-4 leading-tight focus:outline-none focus:bg-white"
           >
             <option>Country</option>
             <option>ipsum</option>
@@ -95,73 +99,83 @@ export default {
 </script>
 
 <style>
-.sign-up {
+.sign-up-form {
   max-width: 1140px;
-  margin: 100px auto;
 }
-.sign-up h1 {
+.sign-up-form h1 {
   font-size: 45px;
 }
-.sign-up .form-wrapper > p {
+.sign-up-form .form-wrapper > p {
   font-size: 17px;
   font-weight: 400; /*regular*/
   margin-bottom: 92px;
 }
 
-.sign-up .form-wrapper {
+.sign-up-form .form-wrapper {
   padding: 47px;
 }
 
-.sign-up .get-started {
+.sign-up-form .get-started {
   width: 216px;
   height: 62px;
   margin: 54px auto 0;
 }
-.sign-up .input-wrapper {
+.sign-up-form .input-wrapper {
   margin-bottom: 46px;
   max-width: 475px;
   width: 100%;
 }
-.sign-up select {
+.sign-up-form select {
   background-image: url('/images/png/dropdown-arrow.png'); /*list down icon*/
   background-repeat: no-repeat;
   background-position: 100% center;
   border-bottom: 1px solid #dfe3e3;
 }
-.sign-up .dropdown label {
+.sign-up-form .dropdown label {
   display: none;
 }
-.sign-up input[type='checkbox'] {
+.sign-up-form input[type='checkbox'] {
   height: 22px;
   width: 22px;
   border-radius: 15px;
   border-color: #cbcbd2;
   margin-right: 16px;
 }
-.sign-up .checkbox {
+.sign-up-form .checkbox {
   margin-bottom: 26px;
 }
-.sign-up a {
+.sign-up-form a {
   color: theme('colors.green.secondary');
   font-weight: 700; /*bold*/
   border-bottom: 1px solid theme('colors.green.secondary');
 }
 
-.sign-up .form-type li {
+.sign-up-form .form-type li {
   color: theme('colors.grey.primary');
   width: 238px;
   text-align: center;
   padding-bottom: 16px;
 }
-.sign-up .form-type {
+.sign-up-form .form-type {
   border-bottom: 1px solid theme('colors.grey.light-3');
 }
-.sign-up .form-type li:first-child {
+.sign-up-form .form-type li:first-child {
   margin-right: 165px;
 }
-.sign-up .form-type li.is-active {
+.sign-up-form .form-type li.is-active {
   border-bottom: 3px solid theme('colors.green.primary');
   color: theme('colors.green.primary');
   font-weight: 700; /*bold*/
+}
+.sign-up-form .overlay {
+  background-image: radial-gradient(#d9ebe8 20%, transparent 25%);
+  background-position: 0 0;
+  background-size: 22px 22px;
+  position: absolute;
+  bottom: -40px;
+  right: -85px;
+  width: 175px;
+  height: 150px;
+  z-index: -1;
 }
 </style>
