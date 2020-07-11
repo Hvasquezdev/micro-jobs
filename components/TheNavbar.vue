@@ -15,11 +15,28 @@
     </div>
 
     <ul class="flex items-center list-none text-white text-base font-manrope">
-      <li>Buy</li>
-      <li>Sell</li>
-      <li>How it works</li>
+      <li>
+        <nuxt-link to="/">
+          Buy
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/">
+          Sell
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/howitworks">
+          How it works
+        </nuxt-link>
+      </li>
       <li class="button-link">
-        <base-button color="white" rounded shadow>
+        <base-button
+          color="white"
+          rounded
+          shadow
+          @click="$router.push('register')"
+        >
           Login or Register
         </base-button>
       </li>
