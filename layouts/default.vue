@@ -28,6 +28,9 @@ export default {
         case 'index':
           return true;
 
+        case 'howitworks':
+          return true;
+
         default:
           return false;
       }

@@ -1,8 +1,8 @@
 <template>
   <div class="home overflow-hidden">
     <home-banner />
-    <browse-jobs />
-    <how-it-works />
+    <home-browse-jobs />
+    <how-it-works-section />
     <reason />
     <newsletter />
     <featured-gigs />
@@ -16,8 +16,8 @@
 
 <script>
 import HomeBanner from '@/components/Home/Banner';
-import BrowseJobs from '@/components/Home/BrowseJobs';
-import HowItWorks from '@/components/Home/HowItWorks';
+import HomeBrowseJobs from '@/components/Home/HomeBrowseJobs';
+import HowItWorksSection from '@/components/Home/HowItWorksSection';
 import Reason from '@/components/Home/Reason';
 import Newsletter from '@/components/Home/Newsletter';
 import FeaturedGigs from '@/components/Home/FeaturedGigs';
@@ -30,8 +30,8 @@ import JoinUs from '@/components/Home/JoinUs';
 export default {
   components: {
     HomeBanner,
-    BrowseJobs,
-    HowItWorks,
+    HomeBrowseJobs,
+    HowItWorksSection,
     Reason,
     Newsletter,
     FeaturedGigs,

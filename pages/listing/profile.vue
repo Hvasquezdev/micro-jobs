@@ -30,7 +30,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import BreadCrumb from '@/components/BreadCrumb';
 import UserProfile from '@/components/ProfileListing/UserProfile';
 import Portfolio from '@/components/ProfileListing/Portafolio';

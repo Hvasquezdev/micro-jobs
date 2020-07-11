@@ -6,7 +6,7 @@
 
     <div class="content-wrapper w-full flex items-start justify-between">
       <div class="left-sidebar flex-shrink-0">
-        <profile-sidebar />
+        <dashboard-sidebar />
       </div>
       <div class="main-content w-full">
         <revenues-banner class="w-full" />
@@ -22,7 +22,7 @@ import BreadCrumb from '@/components/BreadCrumb';
 import RevenuesBanner from '@/components/UserDashboard/Revenues';
 import OrderListing from '@/components/UserDashboard/OrderListing';
 import JobListing from '@/components/UserDashboard/JobListing';
-import ProfileSidebar from '@/components/UserDashboard/ProfileSidebar';
+import DashboardSidebar from '@/components/UserDashboard/DashboardSidebar';
 
 export default {
   name: 'UserDashboard',
@@ -30,7 +30,7 @@ export default {
   components: {
     BreadCrumb,
     JobListing,
-    ProfileSidebar,
+    DashboardSidebar,
     RevenuesBanner,
     OrderListing,
   },
