@@ -189,7 +189,7 @@ export default {
 }
 
 .listing-sidebar label:nth-child(2) {
-  color: theme('colors.green.primary');
+  color: theme('colors.green.primary'); /*Only for visual testing */
   font-weight: 600; /*semibold*/
 }
 </style>

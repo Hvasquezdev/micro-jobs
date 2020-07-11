@@ -102,12 +102,20 @@
         class="options table-column text-grey-primary"
       >
         <!-- Days -->
-        <label for="10-days">
-          <input id="10-days" type="radio" name="delivery-days" />
+        <label for="10-days" class="flex items-center">
+          <div class="custom-radio">
+            <input id="10-days" type="radio" name="delivery-days" />
+            <!-- Green dot  -->
+            <div class="dot"></div>
+          </div>
           10 Days
         </label>
-        <label for="5-days">
-          <input id="5-days" type="radio" name="delivery-days" />
+        <label for="5-days" class="flex items-center">
+          <div class="custom-radio">
+            <input id="5-days" type="radio" name="delivery-days" />
+            <!-- Green dot  -->
+            <div class="dot"></div>
+          </div>
           5 Days (+&50)
         </label>
       </section>
@@ -244,5 +252,30 @@ export default {
   font-size: 16px;
   font-weight: 700; /* bold*/
   margin-top: 36px;
+}
+.packages-table .custom-radio {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99999px;
+  border: 1px solid theme('colors.green.primary');
+  position: relative;
+  margin-right: 12px;
+}
+.packages-table input[type='radio'] {
+  opacity: 0;
+}
+.packages-table .custom-radio .dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 99999px;
+  background-color: theme('colors.green.primary');
+  position: absolute;
+  visibility: hidden;
+}
+.packages-table input[type='radio']:checked + .dot {
+  visibility: visible;
 }
 </style>

@@ -20,7 +20,7 @@
       <li>Copyright Transfer</li>
     </ul>
     <!-- Price Breakdown  -->
-    <h1 class="font-bold text-dark-secondary mb-3">Price Breakdown</h1>
+    <h1 class="font-bold text-dark-secondary mb-4">Price Breakdown</h1>
     <ul class="custom-list-style mb-10">
       <li>Script Writing: $10 (150 words)</li>
       <li>Animation: $5 per second animation (2 second - words)</li>
@@ -32,7 +32,7 @@
       <li>Unlimited Alterations Addition: Free</li>
     </ul>
     <!-- Time  -->
-    <h1 class="font-bold text-dark-secondary mb-3">Time</h1>
+    <h1 class="font-bold text-dark-secondary mb-4">Time</h1>
     <ul class="custom-list-style mb-10 days-list">
       <li>Script Writing <span class="days"> 2 Days</span></li>
       <li>Animation <span class="days"> 2 Days</span></li>
