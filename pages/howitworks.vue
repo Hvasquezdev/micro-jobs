@@ -12,12 +12,12 @@
 
 <script>
 import HowItWorksBanner from '@/components/HowItWork/HowItWorksBanner';
-import HowItWorksSection from '@/components/Home/HowItWorksSection';
-import HowItWorksReason from '@/components/Home/Reason';
-import HowItWorksNewsletter from '@/components/Home/Newsletter';
+import HowItWorksSection from '@/components/SharedSections/HowItWorksSection';
+import HowItWorksReason from '@/components/SharedSections/Reason';
+import HowItWorksNewsletter from '@/components/SharedSections/Newsletter';
 import HowItWorksQuestions from '@/components/HowItWork/Questions';
 import HowItWorksFaq from '@/components/HowItWork/FaqContent';
-import HowItWorksJoin from '@/components/Home/JoinUs';
+import HowItWorksJoin from '@/components/SharedSections/JoinUs';
 
 export default {
   name: 'HowItWorks',

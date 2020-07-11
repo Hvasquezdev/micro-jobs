@@ -3,10 +3,10 @@
 </template>
 
 <script>
-// import RequiredTime from '@/components/RequiredTime';
+// import RequiredTime from '@/components/NewJob/RequiredTime';
 // import TextareaBase from '@/components/TextareaBase';
-// import Payments from '@/components/Payments';
-import PostJobForm from '@/components/PostJobForm';
+// import Payments from '@/components/NewJob/Payments';
+import PostJobForm from '@/components/NewJob/PostJobForm';
 export default {
   name: 'Test',
 

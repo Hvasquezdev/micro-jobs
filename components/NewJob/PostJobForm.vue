@@ -249,14 +249,15 @@
 </template>
 
 <script>
-import JobDuration from '@/components/JobDuration';
-import RequiredTime from '@/components/RequiredTime';
+import JobDuration from '@/components/NewJob/JobDuration';
+import RequiredTime from '@/components/NewJob/RequiredTime';
+import Payments from '@/components/NewJob/Payments';
+import DesiredLevel from '@/components/NewJob/DesiredLevel';
 import BaseCard from '@/components/BaseComponents/BaseCard';
 import TextareaBase from '@/components/BaseComponents/TextareaBase';
 import BaseButton from '@/components/BaseComponents/BaseButton';
 import BaseInput from '@/components/BaseComponents/BaseInput';
-import Payments from '@/components/Payments';
-import DesiredLevel from '@/components/DesiredLevel';
+
 export default {
   name: 'PostJobForm',
   components: {

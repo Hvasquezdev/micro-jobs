@@ -19,16 +19,16 @@
 
 <script>
 import BreadCrumb from '@/components/BreadCrumb';
-import CardBanner from '@/components/CardBanner';
+import CardBanner from '@/components/ProfileListings/CardBanner';
 import TextCarousel from '@/components/TextCarousel';
-import BrowseJobs from '@/components/BrowseJobs';
-import SeekPros from '@/components/SeekPros';
-import HowItWorksSection from '@/components/Home/HowItWorksSection';
-import ListingReason from '@/components/Home/Reason';
-import Newsletter from '@/components/Home/Newsletter';
-import Testimonials from '@/components/Home/Testimonials';
-import ListingCompanies from '@/components/Home/Companies';
-import SignupForm from '@/components/SignUpClient';
+import BrowseJobs from '@/components/ProfileListings/BrowseJobs';
+import SeekPros from '@/components/ProfileListings/SeekPros';
+import HowItWorksSection from '@/components/SharedSections/HowItWorksSection';
+import ListingReason from '@/components/SharedSections/Reason';
+import Newsletter from '@/components/SharedSections/Newsletter';
+import Testimonials from '@/components/SharedSections/Testimonials';
+import ListingCompanies from '@/components/SharedSections/Companies';
+import SignupForm from '@/components/ProfileListings/SignUpClient';
 
 export default {
   components: {

@@ -17,15 +17,15 @@
 <script>
 import HomeBanner from '@/components/Home/Banner';
 import HomeBrowseJobs from '@/components/Home/HomeBrowseJobs';
-import HowItWorksSection from '@/components/Home/HowItWorksSection';
-import Reason from '@/components/Home/Reason';
-import Newsletter from '@/components/Home/Newsletter';
+import HowItWorksSection from '@/components/SharedSections/HowItWorksSection';
+import Reason from '@/components/SharedSections/Reason';
+import Newsletter from '@/components/SharedSections/Newsletter';
 import FeaturedGigs from '@/components/Home/FeaturedGigs';
 import OurAdventages from '@/components/Home/OurAdventages';
-import Testimonials from '@/components/Home/Testimonials';
+import Testimonials from '@/components/SharedSections/Testimonials';
 import LatestNews from '@/components/Home/LatestNews';
-import Companies from '@/components/Home/Companies';
-import JoinUs from '@/components/Home/JoinUs';
+import Companies from '@/components/SharedSections/Companies';
+import JoinUs from '@/components/SharedSections/JoinUs';
 
 export default {
   components: {

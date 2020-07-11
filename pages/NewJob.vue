@@ -8,7 +8,7 @@
 
 <script>
 import BreadCrumb from '@/components/BreadCrumb';
-import NewJobForm from '@/components/PostJobForm';
+import NewJobForm from '@/components/NewJob/PostJobForm';
 
 export default {
   name: 'NewJob',

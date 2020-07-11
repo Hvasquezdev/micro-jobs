@@ -28,18 +28,18 @@
 
 <script>
 import PostHeader from '@/components/SinglePost/PostHeader';
-import GigReviewCarousel from '@/components/GigReviewCarousel';
+import GigReviewCarousel from '@/components/SinglePost/GigReviewCarousel';
 import PostGallery from '@/components/SinglePost/PostGallery';
 import PostPackages from '@/components/SinglePost/PostPackages';
-import GigAbout from '@/components/GigAbout';
-import GigDetails from '@/components/GigDetails';
-import GigReviews from '@/components/GigReviews';
+import GigAbout from '@/components/SinglePost/GigAbout';
+import GigDetails from '@/components/SinglePost/GigDetails';
+import GigReviews from '@/components/SharedSections/GigReviews';
 import BreadCrumb from '@/components/BreadCrumb';
-import OtherGigs from '@/components/OtherGigs';
-import RecommendedGigs from '@/components/RecommendedGigs';
-import CardPackages from '@/components/CardPackages';
-import CardCustomOrder from '@/components/CardCustomOrder';
-import CardProfile from '@/components/CardProfile';
+import OtherGigs from '@/components/SharedSections/OtherGigs';
+import RecommendedGigs from '@/components/SinglePost/RecommendedGigs';
+import CardPackages from '@/components/SinglePost/CardPackages';
+import CardCustomOrder from '@/components/SinglePost/CardCustomOrder';
+import CardProfile from '@/components/SinglePost/CardProfile';
 
 export default {
   name: 'SinglePost',

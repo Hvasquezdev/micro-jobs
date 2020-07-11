@@ -31,18 +31,18 @@
 
 <script>
 import BreadCrumb from '@/components/BreadCrumb';
-import UserProfile from '@/components/ProfileListing/UserProfile';
-import Portfolio from '@/components/ProfileListing/Portafolio';
-import ProfileSidebar from '@/components/ProfileListing/ProfileSidebar';
-import OtherExperiences from '@/components/ProfileListing/OtherExperiences';
-import Education from '@/components/ProfileListing/Education';
-import Tests from '@/components/ProfileListing/Tests';
-import EmploymentHistory from '@/components/ProfileListing/EmploymentHistory';
-import Certifications from '@/components/ProfileListing/Certifications';
-import GigReviews from '@/components/GigReviews';
+import UserProfile from '@/components/ListingProfile/UserProfile';
+import Portfolio from '@/components/ListingProfile/Portafolio';
+import ProfileSidebar from '@/components/ListingProfile/ProfileSidebar';
+import OtherExperiences from '@/components/ListingProfile/OtherExperiences';
+import Education from '@/components/ListingProfile/Education';
+import Tests from '@/components/ListingProfile/Tests';
+import EmploymentHistory from '@/components/ListingProfile/EmploymentHistory';
+import Certifications from '@/components/ListingProfile/Certifications';
+import GigReviews from '@/components/SharedSections/GigReviews';
 import BaseButton from '@/components/BaseComponents/BaseButton';
 import BaseIcon from '@/components/BaseComponents/BaseIcon';
-import OtherGigs from '@/components/OtherGigs';
+import OtherGigs from '@/components/SharedSections/OtherGigs';
 
 export default {
   name: 'ProfilePage',
