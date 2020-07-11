@@ -123,7 +123,7 @@ export default {
 .user-profile {
   padding: 30px;
   max-width: 751px;
-  margin: 100px auto;
+  margin-bottom: 55px;
 }
 .user-profile a {
   font-size: 15px;
