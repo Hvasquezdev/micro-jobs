@@ -30,19 +30,12 @@
 </template>
 
 <script>
-/* eslint-disable */
-import BaseInput from '@/components/BaseComponents/BaseInput';
-import BaseButton from '@/components/BaseComponents/BaseButton';
-import BaseIcon from '@/components/BaseComponents/BaseIcon';
 import BannerNav from '@/components/HowItWork/HowItWorkNav';
 
 export default {
   name: 'HomeBanner',
 
   components: {
-    BaseInput,
-    BaseButton,
-    BaseIcon,
     BannerNav,
   },
 };
