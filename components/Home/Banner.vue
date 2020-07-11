@@ -11,7 +11,7 @@
       We're Worldwide.
     </p>
 
-    <h1 class="text-white capitalize text-center">
+    <h1 class="text-white capitalize text-center font-helvetica">
       Exiting
       <br />
       <span class="title-span">

@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       manrope: 'Manrope, sans-serif',
+      helvetica: 'Helvetica',
     },
     boxShadow: {
       btn: '2px 0 35px rgba(110, 121, 142, 0.24)',
