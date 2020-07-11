@@ -1,8 +1,12 @@
 <template>
   <div v-if="label" class="quest-accordion flex flex-col font-manrope">
-    <base-button class="btn w-full bg-no-repeat" @click="expand()">{{
-      label
-    }}</base-button>
+    <base-button
+      :class="{ 'is-expanded': isExpanded }"
+      class="btn w-full bg-no-repeat"
+      @click="expand"
+    >
+      {{ label }}
+    </base-button>
     <slot />
   </div>
 </template>
@@ -12,19 +16,27 @@ import BaseButton from '@/components/BaseComponents/BaseButton';
 
 export default {
   name: 'BaseQuest',
+
   components: {
     BaseButton,
   },
+
   props: {
     label: {
       type: String,
       default: '',
     },
   },
+
+  data() {
+    return {
+      isExpanded: false,
+    };
+  },
+
   methods: {
     expand() {
-      const btn = this.$el.querySelector('.btn');
-      btn.classList.toggle('is-expanded');
+      this.isExpanded = !this.isExpanded;
     },
   },
 };
@@ -48,6 +60,7 @@ export default {
   background-color: transparent;
   background-image: url('/images/png/plus.png');
   transition: all 0.06s;
+  font-weight: bold;
 }
 .quest-accordion .btn.is-expanded {
   background-image: url('/images/png/minus.png');

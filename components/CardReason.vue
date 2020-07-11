@@ -5,7 +5,7 @@
     >
       01
     </div>
-    <h2 class="text-dark-primary text-lg font-bold">
+    <h2 class="text-dark-primary font-bold">
       Work with top-notch talent
     </h2>
     <p class="text-base text-grey-primary">
@@ -23,6 +23,7 @@
 }
 .card-reason h2 {
   width: 200px;
+  font-size: 20px;
 }
 .card-reason__number {
   width: 71px;
