@@ -28,7 +28,7 @@ import ListingReason from '@/components/Home/Reason';
 import Newsletter from '@/components/Home/Newsletter';
 import Testimonials from '@/components/Home/Testimonials';
 import ListingCompanies from '@/components/Home/Companies';
-import SignupForm from '@/components/SignUp/SignUp';
+import SignupForm from '@/components/SignUpClient';
 
 export default {
   components: {
@@ -115,11 +115,11 @@ export default {
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.profile-listings-page .sign-up-form {
+.profile-listings-page .sign-up-client {
   margin-top: 85px;
   margin-bottom: 80px;
 }
-.profile-listings-page .sign-up-form .overlay {
+.profile-listings-page .sign-up-client .overlay {
   display: none;
 }
 .profile-listings-page .dot-overlay {

@@ -87,6 +87,10 @@ export default {
 .services-listing .main-wrapper .listing-banner .breadcrumb {
   margin: 30px auto 40px 0;
 }
+.services-listing .main-wrapper .listing-banner .breadcrumb a {
+  width: auto;
+  height: auto;
+}
 .services-listing .main-wrapper .listing-banner .listing-banner-card {
   margin-bottom: 25px;
 }

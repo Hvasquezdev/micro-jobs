@@ -24,7 +24,7 @@
 
     <a
       href="#"
-      class="text-white font-manrope font-extrabold flex items-center"
+      class="text-white font-manrope font-extrabold flex items-center w-full justify-center"
     >
       <base-icon name="job" />
       <span class="capitalize">
