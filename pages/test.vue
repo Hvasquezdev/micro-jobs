@@ -1,12 +1,12 @@
 <template>
-  <sign-up-client />
+  <post-job-form />
 </template>
 
 <script>
 // import RequiredTime from '@/components/RequiredTime';
 // import TextareaBase from '@/components/TextareaBase';
 // import Payments from '@/components/Payments';
-import SignUpClient from '@/components/SignUpClient';
+import PostJobForm from '@/components/PostJobForm';
 export default {
   name: 'Test',
 
@@ -15,7 +15,7 @@ export default {
     // RequiredTime,
     // TextareaBase,
     // Payments,
-    SignUpClient,
+    PostJobForm,
   },
 };
 </script>

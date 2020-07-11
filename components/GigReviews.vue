@@ -1,7 +1,7 @@
 <template>
   <section class="gig-reviews font-manrope">
     <!-- Reviews Count & Sort by  -->
-    <section class="reviews-count flex items-start justify-between pb-3">
+    <section class="reviews-count flex items-center justify-between pb-3">
       <!-- Reviews count / rating  -->
       <div class="flex items-center text-dark-secondary">
         <!-- Count  -->
