@@ -14,7 +14,7 @@
           />
         </div>
         <h3 class="user-name text-dark-secondary font-semibold">
-          Nombre
+          User name
         </h3>
       </div>
 
@@ -48,7 +48,7 @@ export default {
 <style>
 .card-message {
   padding: 18px 0 20px 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid theme('colors.grey.light-11');
 }
 .card-message .message-header {
   margin-bottom: 10px;

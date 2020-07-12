@@ -18,6 +18,7 @@ module.exports = {
       red: {
         primary: '#ed8590',
         light: '#fdf3f4',
+        'light-2': '#f6e7e9',
       },
       green: {
         primary: '#409c89',
@@ -42,6 +43,8 @@ module.exports = {
         'light-8': '#666666',
         'light-9': '#f8f8f8',
         'light-10': '#8d8d8d',
+        'light-11': '#e5e5e5',
+        'light-12': '#acabab',
         primary: '#545454',
         secondary: '#6c6c6c',
         tertiary: '#969696',

@@ -18,7 +18,7 @@
       <li>Settings</li>
     </ul>
 
-    <div class="user-menu flex items-center justify-between">
+    <div class="user-menu flex items-center justify-between cursor-pointer">
       <div class="user-data flex items-center justify-start">
         <!-- User picture -->
         <div class="thumb rounded-full bg-white">

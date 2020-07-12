@@ -58,7 +58,7 @@ export default {
 <style>
 .chat-card {
   padding: 40px 43px 30px 25px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid theme('colors.grey.light-11');
 }
 .chat-card.is-active {
   background-color: theme('colors.white');

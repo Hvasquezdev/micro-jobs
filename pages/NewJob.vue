@@ -26,8 +26,8 @@ export default {
           url: '/',
         },
         {
-          text: 'Dashboard',
-          url: '/dashboard',
+          text: 'Poast a Job',
+          url: '/newjob',
         },
       ],
     };

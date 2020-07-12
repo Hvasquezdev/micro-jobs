@@ -10,6 +10,11 @@
     >
       <div class="messages-list w-full mb-auto">
         <div class="messages-wrapper w-full overflow-y-scroll">
+          <div
+            class="message-timer font-manrope text-grey-light-7 text-base w-full flex items-center justify-center relative"
+          >
+            Today
+          </div>
           <card-message v-for="message in 4" :key="message" />
         </div>
 
@@ -22,7 +27,7 @@
             />
           </div>
           <h4 class="title text-dark-secondary font-semibold">Name</h4>
-          <p class="text-grey-light-10">Typing...</p>
+          <p class="text-grey-light-12">Typing...</p>
         </div>
       </div>
 
@@ -56,7 +61,7 @@ export default {
 .chat .chat-list {
   flex-basis: 30%;
   max-width: 475px;
-  border-right: 1px solid #f6e7e9;
+  border-right: 1px solid theme('colors.red.light-2');
   max-height: 100%;
 }
 .chat .chat-list::-webkit-scrollbar {
@@ -64,15 +69,31 @@ export default {
 }
 .chat .chat-list {
   scrollbar-width: thin;
-  scrollbar-color: #ed8590 #f6e7e9;
+  scrollbar-color: theme('colors.red.primary') theme('colors.red.light-2');
 }
 .chat .chat-list::-webkit-scrollbar-track {
-  background: #f6e7e9;
+  background: theme('colors.red.light-2');
 }
 .chat .chat-list::-webkit-scrollbar-thumb {
-  background-color: #ed8590;
+  background-color: theme('colors.red.primary');
   border-radius: 6px;
-  border: 3px solid #f6e7e9;
+  border: 3px solid theme('colors.red.light-2');
+}
+.chat .message-timer::before,
+.chat .message-timer::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 45%;
+  background-color: theme('colors.grey.light-11');
+  top: 50%;
+  transform: translateY(-50%);
+}
+.chat .message-timer::after {
+  right: 0;
+}
+.chat .message-timer::before {
+  left: 0;
 }
 .chat .chat-messages {
   padding: 40px 55px 20px 55px;
@@ -85,7 +106,7 @@ export default {
 }
 .chat .chat-messages .messages-list .messages-wrapper {
   scrollbar-width: none;
-  scrollbar-color: #ed8590 #f6e7e9;
+  scrollbar-color: theme('colors.red.primary') theme('colors.red.light-2');
 }
 .chat .chat-messages .messages-input {
   padding: 25px 45px;
