@@ -8,7 +8,7 @@
     />
     <!-- Data  -->
     <section class="flex-col flex items-start justify-center">
-      <h2 class="font-bold text-lg">
+      <h2 class="font-bold text-dark-secondary text-lg">
         I will do resume design, cv, design cover letter
       </h2>
       <!-- Stars  -->
@@ -22,7 +22,7 @@
         <p class="font-bold ml-1">4.9/5</p>
       </div>
       <!-- Price  -->
-      <p class="price font-bold text-lg text-green-primary">$15.00</p>
+      <p class="price font-extrabold text-lg text-green-primary">$15.00</p>
     </section>
   </article>
 </template>

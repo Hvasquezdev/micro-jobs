@@ -21,7 +21,7 @@
     <!-- Name  -->
     <h2 class="my-5 text-dark-primary font-semibold">Angelo V.Ray</h2>
     <!-- Price  -->
-    <p class="price font-bold text-lg text-green-primary">$5.99</p>
+    <p class="price font-extrabold text-lg text-green-primary">$5.99</p>
   </article>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <article class="card-order flex relative flex-col items-star font-manrope">
     <!-- Title  -->
-    <h2 class="font-bold text-lg text-dark-secondary mb-4">
+    <h2 class="font-semibold text-lg text-dark-secondary mb-4">
       I will record a BRITISH female voice over in
       <strong class="text-green-primary">48 hours</strong>
     </h2>

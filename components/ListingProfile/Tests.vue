@@ -1,6 +1,6 @@
 <template>
   <section class="tests flex-col flex items-start font-manrope">
-    <h2 class="font-bold w-full mb-6">Tests</h2>
+    <h2 class="font-bold text-dark-secondary w-full mb-6">Tests</h2>
     <div class="table-data w-full flex flex-col items-start shadow-card">
       <!-- Row 1 -->
       <div class="t-row text-dark-primary text-base font-bold">

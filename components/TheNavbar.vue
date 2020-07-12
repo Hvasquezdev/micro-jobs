@@ -77,6 +77,9 @@ export default {
 .navbar {
   padding: 27px 55px;
 }
+.navbar ul li a {
+  color: theme('colors.white');
+}
 .navbar ul li:not(:last-child) {
   margin-right: 45px;
 }

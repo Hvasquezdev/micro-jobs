@@ -2,7 +2,7 @@
   <section class="sign-up-client">
     <!-- Form  -->
     <base-card class="form-wrapper h-full flex flex-col w-full">
-      <h1 class="text-dark-primary font-normal mb-6">
+      <h1 class="text-dark-secondary font-normal mb-6">
         Create a Free <span class="font-bold">Client Account</span>
       </h1>
       <p class="text-grey-primary">

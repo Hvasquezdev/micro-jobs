@@ -19,7 +19,7 @@
           Alonzo J. Vance
         </h3>
         <!-- Review time  -->
-        <h4 class="text-base text-grey-primary">
+        <h4 class="text-base text-grey-light-2">
           2 days ago
         </h4>
       </div>

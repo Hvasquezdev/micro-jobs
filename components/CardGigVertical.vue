@@ -14,7 +14,7 @@
     </div>
     <!-- Heart -->
     <div
-      class="heart bg-no-repeat bg-center top-0 right-0 rounded-full absolute mr-3"
+      class="heart bg-no-repeat bg-center top-0 right-0 rounded-full absolute mr-3 cursor-pointer"
     ></div>
     <div class="content">
       <!-- Description  -->
@@ -34,8 +34,8 @@
       </div>
       <!-- Name & Price  -->
       <section class="flex items-center justify-between">
-        <h2 class="text-dark-primary font-semibold">Angelo V.Ray</h2>
-        <p class="price font-bold text-green-primary">$5.99</p>
+        <h2 class="text-dark-primary font-medium">Angelo V.Ray</h2>
+        <p class="price font-extrabold text-green-primary">$5.99</p>
       </section>
     </div>
   </article>

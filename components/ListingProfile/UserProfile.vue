@@ -89,12 +89,12 @@
       <!-- Overview  -->
       <div class="overview">
         <h2 class="font-bold text-dark-secondary mb-4">Overview</h2>
-        <p>
+        <p class="text-grey-primary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolor
           ipsum. Doloremque in distinctio at voluptate architecto quis velit
           dignissimos, sed non dolor quas quisquam perspiciatis iste et hic ea.
         </p>
-        <p>
+        <p class="text-grey-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
           perferendis veniam iure, eos dolore eligendi tempore. Laborum, eius
           iure sunt quo fugiat dicta officia voluptate ratione hic et sit
@@ -102,7 +102,7 @@
         </p>
       </div>
       <!-- Read More  -->
-      <a href="#" class="font-bold text-red-primary underline pb-1"
+      <a href="#" class="font-medium text-red-primary underline pb-1"
         >Read more</a
       >
     </div>
@@ -141,7 +141,6 @@ export default {
   padding: 2px;
   box-shadow: 2px 0 24px rgba(139, 149, 169, 0.24);
 }
-
 .user-profile .level-circle {
   width: 55px;
   height: 55px;
@@ -194,13 +193,13 @@ export default {
   justify-content: space-between;
 }
 .user-profile .other-info h4 {
-  font-weight: 700; /*bold*/
-  color: theme('colors.dark.primary');
+  font-weight: 700;
+  color: theme('colors.dark.secondary');
 }
 .user-profile .other-info p {
   font-size: 16px;
   color: theme('colors.grey.primary');
-  font-weight: 400; /*regular*/
+  font-weight: 400;
 }
 .user-profile .other-info div:nth-child(1) {
   padding-right: 170px;

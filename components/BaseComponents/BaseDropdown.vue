@@ -68,6 +68,9 @@ export default {
   height: 0;
   transition: all 0.3s;
 }
+.base-dropdown .dropdown-items a {
+  color: theme('colors.grey.darken-1');
+}
 .base-dropdown.is-open .dropdown-items {
   height: auto;
   margin-bottom: 23px;

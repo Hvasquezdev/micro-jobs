@@ -3,7 +3,7 @@
     <!-- Format -->
     <ul
       v-if="hasTabs"
-      class="form-type flex items-center justify-center w-auto text-lg"
+      class="form-type flex items-center justify-center w-auto"
     >
       <li class="cursor-pointer is-active">Client Account</li>
       <li class="cursor-pointer">Freelancer Account</li>
@@ -14,7 +14,7 @@
     >
       <div class="overlay z-10"></div>
 
-      <h1 class="text-dark-primary font-normal mb-6">
+      <h1 class="text-dark-secondary font-normal mb-6">
         Create a Free <span class="font-bold">Client Account</span>
       </h1>
       <p class="text-grey-primary">Looking for a work? Fill out the form.</p>
@@ -184,10 +184,11 @@ export default {
 }
 
 .sign-up-form .form-type li {
-  color: theme('colors.grey.primary');
+  color: theme('colors.grey.light-2');
   width: 238px;
   text-align: center;
   padding-bottom: 16px;
+  font-size: 20px;
 }
 .sign-up-form .form-type {
   border-bottom: 1px solid theme('colors.grey.light-3');

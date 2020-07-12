@@ -11,7 +11,9 @@
       <!-- Job Done rate  -->
       <section class="job-done-rate pt-10 flex-col flex">
         <div class="flex justify-between items-start">
-          <h2 class="capitalize font-bold text-lg">Job Done Rate</h2>
+          <h2 class="capitalize text-dark-secondary font-bold text-lg">
+            Job Done Rate
+          </h2>
           <p class="bar-percentage font-bold text-base text-green-primary">
             94%
           </p>
@@ -27,14 +29,14 @@
       </section>
       <!-- Work History  -->
       <section class="work-history">
-        <h2>Work History</h2>
+        <h2 class="text-dark-secondary">Work History</h2>
         <ul class="text-grey-primary">
           <li>10 Jobs Completed</li>
         </ul>
       </section>
       <!-- Availability  -->
       <section class="availability">
-        <h2>Availability</h2>
+        <h2 class="text-dark-secondary">Availability</h2>
         <ul class="custom-list-style text-grey-primary text text-base">
           <li>Available</li>
           <li>As Needed - Open to Offers</li>
@@ -43,14 +45,14 @@
       </section>
       <!-- User Profile Link  -->
       <section class="user-link">
-        <h2>User Profile Link</h2>
+        <h2 class="text-dark-secondary">User Profile Link</h2>
         <a class="font-normal text-base text-green-primary underline" href="#"
           >http://micro-jobs.com</a
         >
       </section>
       <!-- Search For Others  -->
       <section class="search">
-        <h2>Search For Others</h2>
+        <h2 class="text-dark-secondary">Search For Others</h2>
         <!-- Search Input  -->
         <label class="relative w-full" for="search-others">
           <input
