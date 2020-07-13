@@ -1,8 +1,10 @@
 <template>
   <div :class="classNames" class="base-input flex items-center">
-    <label v-if="label" class="font-manrope text-grey-primary text-base">
-      {{ label }}
-    </label>
+    <div v-if="label" class="label">
+      <label v-if="label" class="font-manrope text-grey-primary text-base">
+        {{ label }}
+      </label>
+    </div>
     <input
       class="input font-manrope appearance-none border-none w-full text-grey-primary text-base leading-tight focus:outline-none"
       :value="value"
@@ -24,8 +26,8 @@ export default {
 
   props: {
     value: {
-      type: [String, Number],
-      default: undefined,
+      type: String,
+      default: '',
     },
     type: {
       type: String,
@@ -89,14 +91,20 @@ export default {
   padding: 10px 0;
   position: relative;
 }
-.base-input label {
+.base-input .label {
   position: absolute;
   left: 0;
   pointer-events: none;
   transition: all 0.25s;
 }
-.base-input.is-active label {
-  padding-bottom: 40px;
+.base-input .label label {
+  transition: all 0.25s;
+}
+.base-input.is-active .label {
+  top: calc(50% - 20px);
+  transform: translateY(-50%);
+}
+.base-input.is-active .label label {
   font-size: 14px;
 }
 .base-input .input {

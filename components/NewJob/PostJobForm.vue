@@ -24,9 +24,17 @@
         <div class="input-wrapper w-full flex-col flex items-start">
           <h3 class="mb-5">Describe the Job</h3>
           <!-- Name your Job  -->
-          <base-input class="w-full" label="Name your job posting" />
+          <base-input
+            v-model="formOne"
+            class="w-full"
+            label="Name your job posting"
+          />
           <!-- Describe the work  -->
-          <textarea-base class="mt-12" label="Describe the work to be done" />
+          <textarea-base
+            v-model="formTwo"
+            class="mt-12"
+            label="Describe the work to be done"
+          />
           <!-- Attach File  -->
           <div class="input-wrapper w-full flex items-center">
             <base-button
@@ -122,6 +130,7 @@
             </div>
             <!-- Enter skills needed  -->
             <base-input
+              v-model="formThree"
               class="w-full mt-16"
               label="Enter skills needed (optional)"
             />
@@ -269,6 +278,41 @@ export default {
     RequiredTime,
     JobDuration,
     DesiredLevel,
+  },
+
+  data() {
+    return {
+      sampleForm: '',
+      sampleForm2: '',
+      sampleForm3: '',
+    };
+  },
+
+  computed: {
+    formOne: {
+      set(val) {
+        this.sampleForm = val;
+      },
+      get() {
+        return this.sampleForm;
+      },
+    },
+    formTwo: {
+      set(val) {
+        this.sampleForm2 = val;
+      },
+      get() {
+        return this.sampleForm2;
+      },
+    },
+    formThree: {
+      set(val) {
+        this.sampleForm3 = val;
+      },
+      get() {
+        return this.sampleForm3;
+      },
+    },
   },
 };
 </script>

@@ -3,13 +3,14 @@
     <label v-if="label" class="text-grey-light-2">{{ label }}</label>
     <textarea
       class="font-grey-primary w-full outline-none resize-none"
-      maxlength="250"
-      @keydown="checkMaxLenght()"
-      @keyup="checkMaxLenght()"
+      :maxlength="maxLength"
+      :value="value"
+      v-bind="$attrs"
+      v-on="listeners"
     >
     </textarea>
     <div class="text-grey-light-2 w-full letter-count text-right">
-      250 Characters Left
+      {{ maxLength - value.length }} Characters Left
     </div>
   </div>
 </template>
@@ -18,20 +19,32 @@
 export default {
   name: 'TextareaBase',
   props: {
+    value: {
+      type: String,
+      default: '',
+    },
     label: {
       type: String,
       default: '',
     },
+    maxLength: {
+      type: Number,
+      default: 250,
+    },
   },
+
+  computed: {
+    listeners() {
+      return {
+        ...this.$listeners,
+        input: this.onInput,
+      };
+    },
+  },
+
   methods: {
-    checkMaxLenght() {
-      const textareaEl = this.$el.querySelector('textarea');
-      const counter = this.$el.querySelector('.letter-count');
-      const onlyLetters = /\w/gi;
-      const letterCount = textareaEl.value.match(onlyLetters)?.length || 0;
-      counter.textContent = `${
-        textareaEl.maxLength - letterCount
-      } Characters Left`;
+    onInput(e) {
+      this.$emit('input', e.target.value);
     },
   },
 };
